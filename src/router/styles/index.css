@@ -1,0 +1,11 @@
+@import './reset.css';
+
+body {
+  background-color: #f4f5f5;
+}
+
+.routerApp .content {
+  padding: 20px 10px;
+  margin: 10px 70px;
+  background-color: #fff;
+}

@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import TopicsView from "./main";
+import "./styles/main.css";
 
 class Topics extends Component {
   render() {
-    return <div>Topics</div>;
+    return <TopicsView />;
   }
 }
 

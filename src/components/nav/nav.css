@@ -1,23 +1,15 @@
-body {
-  background-color: #f4f5f5;
-}
-
 .nav {
   line-height: 60px;
   padding: 0 50px;
   background-color: #fff;
 }
 
-.content {
-  margin: 10px 70px;
-}
-
-a {
+.nav a {
   color: #71777c;
   margin: 0 20px;
 }
 
 
-a.active {
+.nav a.active {
   color: #007fff;
 }
