@@ -1,0 +1,7 @@
+.article {
+  padding: 10px 20px;
+}
+
+.article div:not(:last-child) {
+  margin-bottom: 10px;
+}

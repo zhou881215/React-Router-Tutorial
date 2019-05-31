@@ -4,7 +4,7 @@ import "./styles/main.css";
 
 class Home extends Component {
   render() {
-    return <HomeView />;
+    return <HomeView {...this.props} />;
   }
 }
 

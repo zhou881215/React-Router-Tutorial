@@ -15,6 +15,7 @@ import Home from "../pages/home/";
 import Activities from "../pages/activities";
 import Topics from "../pages/topics";
 import Login from "../pages/login";
+import Article from "../pages/article";
 
 import "./styles/index.css";
 
@@ -27,6 +28,7 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/activities" component={Activities} />
             <Route path="/topics" component={Topics} />
+            <Route path="/article/:id" component={Article} />
             <Route path="/login" component={Login} />
             <Redirect to="/" />
           </Switch>
