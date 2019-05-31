@@ -8,10 +8,12 @@ class HomeView extends Component {
     e.preventDefault();
     const author = this.authorInput.current.value;
     const title = this.titleInput.current.value;
+    const time = new Date();
     const id = Math.floor(Math.random() * 100000000000000);
     const article = {
       author,
       title,
+      time,
       id
     };
     this.sendArticle(article);
@@ -21,7 +23,7 @@ class HomeView extends Component {
 
   sendArticle = article => {
     const articleList = JSON.parse(localStorage.getItem("articleList")) || [];
-    articleList.push(article);
+    articleList.unshift(article);
     localStorage.setItem("articleList", JSON.stringify(articleList));
     this.jumpToTopics();
   };

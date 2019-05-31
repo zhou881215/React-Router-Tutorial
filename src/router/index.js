@@ -29,6 +29,7 @@ class App extends Component {
             <Route path="/activities" component={Activities} />
             <Route path="/topics" component={Topics} />
             <Route path="/article/:id" component={Article} />
+            {/* 动态路由就是加个:value */}
             <Route path="/login" component={Login} />
             <Redirect to="/" />
           </Switch>

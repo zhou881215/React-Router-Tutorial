@@ -16,6 +16,12 @@
 }
 
 .topics .topic-box h5 {
+  font-size: 14px;
+  color: #909090;
+  margin-bottom: 10px;
+}
+
+.topics .topic-box h6 {
   font-size: 12px;
   color: #909090;
   margin-bottom: 10px;

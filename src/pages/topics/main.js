@@ -26,12 +26,14 @@ class TopicsView extends Component {
               {`作者： ${item.author}`}{" "}
               <button onClick={() => this.handleDelete(index)}>Delete</button>
             </h5>
+            <h6> {`时间： ${item.time}`}</h6>
             <Link
               to={{
                 pathname: `/article/${item.id}`,
                 state: {
                   author: item.author,
-                  title: item.title
+                  title: item.title,
+                  time: item.time
                 }
               }}
             >
